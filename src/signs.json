@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "sign": "Aries",
+    "longitude_start": "0",
+    "longitude_end": "30",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Aries.svg",
+    "svg": "/assets/images/svg/Aries.svg",
+    "unicode_symbol": "♈",
+    "gloss": "The Ram",
+    "element": "Fire",
+    "ruling_body_classic": "Mars",
+    "ruling_body_modern": "Mars",
+    "keywords": [
+      "driven",
+      "idealistic",
+      "aggressive"
+    ]
+  },
+  {
+    "id": 2,
+    "sign": "Taurus",
+    "longitude_start": "30",
+    "longitude_end": "60",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Taurus.svg",
+    "svg": "/assets/images/svg/Taurus.svg",
+    "unicode_symbol": "♉",
+    "gloss": "The Bull",
+    "element": "Earth",
+    "ruling_body_classic": "Venus",
+    "ruling_body_modern": "Earth",
+    "keywords": [
+      "resolute",
+      "sensual",
+      "indulgent"
+    ]
+  },
+  {
+    "id": 3,
+    "sign": "Gemini",
+    "longitude_start": "60",
+    "longitude_end": "90",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Gemini.svg",
+    "svg": "/assets/images/svg/Gemini.svg",
+    "unicode_symbol": "♊",
+    "gloss": "The Twins",
+    "element": "Air",
+    "ruling_body_classic": "Mercury",
+    "ruling_body_modern": "Mercury",
+    "keywords": [
+      "playful",
+      "curious",
+      "two-faced"
+    ]
+  },
+  {
+    "id": 4,
+    "sign": "Cancer",
+    "longitude_start": "90",
+    "longitude_end": "120",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Cancer.svg",
+    "svg": "/assets/images/svg/Cancer.svg",
+    "unicode_symbol": "♋",
+    "gloss": "The Crab",
+    "element": "Water",
+    "ruling_body_classic": "Moon",
+    "ruling_body_modern": "Moon",
+    "keywords": [
+      "nurturing",
+      "snobby",
+      "petty"
+    ]
+  },
+  {
+    "id": 5,
+    "sign": "Leo",
+    "longitude_start": "120",
+    "longitude_end": "150",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Leo.svg",
+    "svg": "/assets/images/svg/Leo.svg",
+    "unicode_symbol": "♌",
+    "gloss": "The Lion",
+    "element": "Fire",
+    "ruling_body_classic": "Sun",
+    "ruling_body_modern": "Sun",
+    "keywords": [
+      "fierce",
+      "opulent",
+      "narcissistic"
+    ]
+  },
+  {
+    "id": 6,
+    "sign": "Virgo",
+    "longitude_start": "150",
+    "longitude_end": "180",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Virgo.svg",
+    "svg": "/assets/images/svg/Virgo.svg",
+    "unicode_symbol": "♍",
+    "gloss": "The Maiden",
+    "element": "Earth",
+    "ruling_body_classic": "Mercury",
+    "ruling_body_modern": "Ceres",
+    "keywords": [
+      "meticulous",
+      "helpful",
+      "naive"
+    ]
+  },
+  {
+    "id": 7,
+    "sign": "Libra",
+    "longitude_start": "180",
+    "longitude_end": "210",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Libra.svg",
+    "svg": "/assets/images/svg/Libra.svg",
+    "unicode_symbol": "♎",
+    "gloss": "The Scales",
+    "element": "Air",
+    "ruling_body_classic": "Venus",
+    "ruling_body_modern": "Venus",
+    "keywords": [
+      "balanced",
+      "chatty",
+      "indecisive"
+    ]
+  },
+  {
+    "id": 8,
+    "sign": "Scorpio",
+    "longitude_start": "210",
+    "longitude_end": "240",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Scorpio.svg",
+    "svg": "/assets/images/svg/Scorpio.svg",
+    "unicode_symbol": "♏",
+    "gloss": "The Scorpion",
+    "element": "Water",
+    "ruling_body_classic": "Mars",
+    "ruling_body_modern": "Pluto",
+    "keywords": [
+      "deep",
+      "magnetic",
+      "destructive"
+    ]
+  },
+  {
+    "id": 9,
+    "sign": "Sagittarius",
+    "longitude_start": "240",
+    "longitude_end": "270",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Sagittarius.svg",
+    "svg": "/assets/images/svg/Sagittarius.svg",
+    "unicode_symbol": "♐",
+    "gloss": "The Archer",
+    "element": "Fire",
+    "ruling_body_classic": "Jupiter",
+    "ruling_body_modern": "Jupiter",
+    "keywords": [
+      "ambitious",
+      "daring",
+      "coarse"
+    ]
+  },
+  {
+    "id": 10,
+    "sign": "Capricorn",
+    "longitude_start": "270",
+    "longitude_end": "300",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Capricorn.svg",
+    "svg": "/assets/images/svg/Capricorn.svg",
+    "unicode_symbol": "♑",
+    "gloss": "The Mountain Sea-goat",
+    "element": "Earth",
+    "ruling_body_classic": "Saturn",
+    "ruling_body_modern": "Saturn",
+    "keywords": [
+      "responsible",
+      "awkward",
+      "rigid"
+    ]
+  },
+  {
+    "id": 11,
+    "sign": "Aquarius",
+    "longitude_start": "300",
+    "longitude_end": "330",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Aquarius.svg",
+    "svg": "/assets/images/svg/Aquarius.svg",
+    "unicode_symbol": "♒",
+    "gloss": "The Water-bearer",
+    "element": "Air",
+    "ruling_body_classic": "Saturn",
+    "ruling_body_modern": "Uranus",
+    "keywords": [
+      "inventive",
+      "zany",
+      "erratic"
+    ]
+  },
+  {
+    "id": 12,
+    "sign": "Pisces",
+    "longitude_start": "330",
+    "longitude_end": "360",
+    "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Pisces.svg",
+    "svg": "/assets/images/svg/Pisces.svg",
+    "unicode_symbol": "♓",
+    "gloss": "The Fish",
+    "element": "Water",
+    "ruling_body_classic": "Jupiter",
+    "ruling_body_modern": "Neptune",
+    "keywords": [
+      "artistic",
+      "sentimental",
+      "dependent"
+    ]
+  }
+]
