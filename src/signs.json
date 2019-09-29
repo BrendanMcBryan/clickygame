@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "picked": false,
     "sign": "Aries",
     "longitude_start": "0",
     "longitude_end": "30",
@@ -19,6 +20,7 @@
   },
   {
     "id": 2,
+    "picked": false,
     "sign": "Taurus",
     "longitude_start": "30",
     "longitude_end": "60",
@@ -37,6 +39,7 @@
   },
   {
     "id": 3,
+    "picked": false,
     "sign": "Gemini",
     "longitude_start": "60",
     "longitude_end": "90",
@@ -55,6 +58,7 @@
   },
   {
     "id": 4,
+    "picked": false,
     "sign": "Cancer",
     "longitude_start": "90",
     "longitude_end": "120",
@@ -73,6 +77,7 @@
   },
   {
     "id": 5,
+    "picked": false,
     "sign": "Leo",
     "longitude_start": "120",
     "longitude_end": "150",
@@ -91,6 +96,7 @@
   },
   {
     "id": 6,
+    "picked": false,
     "sign": "Virgo",
     "longitude_start": "150",
     "longitude_end": "180",
@@ -109,6 +115,7 @@
   },
   {
     "id": 7,
+    "picked": false,
     "sign": "Libra",
     "longitude_start": "180",
     "longitude_end": "210",
@@ -127,6 +134,7 @@
   },
   {
     "id": 8,
+    "picked": false,
     "sign": "Scorpio",
     "longitude_start": "210",
     "longitude_end": "240",
@@ -145,6 +153,7 @@
   },
   {
     "id": 9,
+    "picked": false,
     "sign": "Sagittarius",
     "longitude_start": "240",
     "longitude_end": "270",
@@ -163,6 +172,7 @@
   },
   {
     "id": 10,
+    "picked": false,
     "sign": "Capricorn",
     "longitude_start": "270",
     "longitude_end": "300",
@@ -181,6 +191,7 @@
   },
   {
     "id": 11,
+    "picked": false,
     "sign": "Aquarius",
     "longitude_start": "300",
     "longitude_end": "330",
@@ -199,6 +210,7 @@
   },
   {
     "id": 12,
+    "picked": false,
     "sign": "Pisces",
     "longitude_start": "330",
     "longitude_end": "360",

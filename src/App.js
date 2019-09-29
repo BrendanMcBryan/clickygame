@@ -8,29 +8,69 @@ import Board from "./components/Board";
 
 class App extends Component {
   state = {
-    signs
+    signs,
+    score: 0,
+    topScore: 0,
+    message: "Welcome! Click to start!"
   };
+
+  componentDidMount() {
+    this.shuffleState(this.state.signs);
+  }
+  /**
+   * Randomly shuffle an array
+   * https://stackoverflow.com/a/2450976/1293256
+   */
+
+  shuffleState = array => {
+    var currentIndex = array.length;
+    var temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    this.setState({ signs: array });
+  };
+
   handleGuess = id => {
     const signs = this.state.signs.filter(sign => sign.id !== id);
-    this.setState({ signs });
+    let newScore = this.state.score + 1;
+    this.setState({ signs, score: newScore });
+    this.shuffleState(signs);
+
   };
 
   render() {
     return (
       <Wrapper>
-        <Title>Clicky the Guessing Game</Title>
-        <Board>
-          {this.state.signs.map(sign => (
-            <SignCard
-              handleGuess={this.handleGuess}
-              id={sign.id}
-              key={sign.id}
-              sign={sign.sign}
-              image={sign.svg}
-              unicode={sign.unicode_symbol}
-            />
-          ))}
-        </Board>
+        <Title
+          message={this.state.message}
+          score={this.state.score}
+          topScore={this.state.topScore}
+        ></Title>
+        <div className="Container">
+          <Board>
+            {this.state.signs.map(sign => (
+              <SignCard
+                handleGuess={this.handleGuess}
+                id={sign.id}
+                key={sign.id}
+                sign={sign.sign}
+                image={sign.svg}
+                unicode={sign.unicode_symbol}
+                picked={sign.picked}
+              />
+            ))}
+          </Board>
+        </div>
       </Wrapper>
     );
   }
