@@ -15,7 +15,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.shuffleState(this.state.signs);
+    // this.shuffleState(this.state.signs);
   }
   /**
    * Randomly shuffle an array
@@ -41,11 +41,38 @@ class App extends Component {
   };
 
   handleGuess = id => {
-    const signs = this.state.signs.filter(sign => sign.id !== id);
-    let newScore = this.state.score + 1;
-    this.setState({ signs, score: newScore });
-    this.shuffleState(signs);
+    console.log(id);
+    const newID = id - 1;
+    const signs = this.state.signs;
+    console.log(signs[newID]);
 
+    switch (signs[newID].picked) {
+      case true:
+        // signs = require("./signs.json");
+
+        this.setState({ signs, score: 0, message: "Bad Pick!, game over" });
+
+        console.log("Already Picked!");
+
+        //
+        break;
+      case false:
+        this.setState({ message: "Good Pick!" });
+        signs[newID].picked = true;
+        let newScore = this.state.score + 1;
+        // increase Topscore if need be
+        if (newScore > this.state.topScore) {
+          this.setState({ topScore: newScore });
+        }
+        this.setState({ score: newScore });
+        break;
+      default:
+      // code block
+    }
+    // const signs = this.state.signs.filter(sign => sign.id !== id);
+
+    this.setState({ signs });
+    // this.shuffleState(signs);
   };
 
   render() {
