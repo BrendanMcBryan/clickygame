@@ -1,4 +1,12 @@
 .card-columns {
-    column-count: 6;
-    width: 80%;
+  column-count: 6;
+  width: 100%;
+  text-align: center;
+}
+
+.container
+{
+    margin-top: 3rem;
+    position: relative;
+    bottom: 0;
 }

@@ -9,7 +9,9 @@ function SignCard(props) {
     >
       <img src={props.image} className="card-img" alt={props.sign} />
       <div className="card-image-overlay">
-        <h5 className="card-title">{props.picked.toString()}</h5>
+        <h6 className="card-title">{props.sign}</h6>
+        <p className="card-text">{props.picked.toString()}</p>
+        <p>id->{props.id}</p>
       </div>
     </div>
   );
