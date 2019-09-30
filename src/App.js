@@ -85,8 +85,8 @@ class App extends Component {
       // code block
     }
 
+    console.log("signs suppsoeldy shiffled!");
     this.setState({ signs });
-    // this.shuffleSigns(signs);
   };
 
   render() {
@@ -98,17 +98,19 @@ class App extends Component {
           topScore={this.state.topScore}
         ></Title>
         <Board className="container">
-          {this.state.signs.map(sign => (
-            <SignCard
-              handleGuess={this.handleGuess}
-              id={sign.id}
-              key={sign.id}
-              sign={sign.sign}
-              image={sign.svg}
-              unicode={sign.unicode_symbol}
-              picked={sign.picked}
-            />
-          ))}
+          {this.shuffleSigns(
+            this.state.signs.map(sign => (
+              <SignCard
+                handleGuess={this.handleGuess}
+                id={sign.id}
+                key={sign.id}
+                sign={sign.sign}
+                image={sign.svg}
+                unicode={sign.unicode_symbol}
+                picked={sign.picked}
+              />
+            ))
+          )}
         </Board>
       </Wrapper>
     );
