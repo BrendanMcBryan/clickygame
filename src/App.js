@@ -1,3 +1,5 @@
+// import dependencies
+
 import React, { Component } from "react";
 // import logo from "./logo.svg";
 import SignCard from "./components/SignCard";
@@ -14,13 +16,12 @@ class App extends Component {
     message: "Welcome! Click to start!"
   };
 
+  // TODO check to see if i really need to use this Headers, seems like maybe not
   componentDidMount() {
     // this.shuffleSigns(this.state.signs);
   }
-  /**
-   * Randomly shuffle an array
-   * https://stackoverflow.com/a/2450976/1293256
-   */
+
+  // * This method, which took a lot of searching and finagling, is apparently called the "Durstenfeld shuffle algorithm" for shuffling an array, it was confirmed as 'how to do it' by Dan before class
 
   shuffleSigns = array => {
     let i = array.length - 1;
@@ -31,25 +32,9 @@ class App extends Component {
       array[j] = temp;
     }
     return array;
-
-    // var currentIndex = array.length;
-    // var temporaryValue, randomIndex;
-
-    // // While there remain elements to shuffle...
-    // while (0 !== currentIndex) {
-    //   // Pick a remaining element...
-    //   randomIndex = Math.floor(Math.random() * currentIndex);
-    //   currentIndex -= 1;
-
-    //   // And swap it with the current element.
-    //   temporaryValue = array[currentIndex];
-    //   array[currentIndex] = array[randomIndex];
-    //   array[randomIndex] = temporaryValue;
-    // }
-    // // this.setState({ signs: array });
-    // return array;
   };
 
+  // * Here is where we handle guessee. It uses a switch system based on the "picked" boolean of the record chosen
   handleGuess = id => {
     const newSign = this.state.signs[id - 1];
     console.log(
@@ -58,17 +43,18 @@ class App extends Component {
 
     switch (newSign.picked) {
       case true:
-        // signs = require("./signs.json");
-
+        // * User has lost, reset the score and let them know about it
         this.setState({ score: 0, message: "Bad Pick!, game over" });
 
-        console.log("Already Picked!");
+        // TODO console.log("Already Picked!");
+
+        // * Here we reset all the cards so that the "picked" in thier records are set back to "False"
         signs.forEach(element => {
           element.picked = false;
         });
         this.setState({ signs });
-
         break;
+
       case false:
         this.setState({ message: "Good Pick!" });
         newSign.picked = true;
@@ -79,13 +65,14 @@ class App extends Component {
           this.setState({ topScore: newScore });
         }
         this.setState({ score: newScore });
-        // this.setState({ signs });
         break;
+
       default:
-      // code block
+        break;
     }
 
-    console.log("signs suppsoeldy shiffled!");
+    // TODO console.log("signs suppsoeldy shiffled!");
+    // * After all the above set the state of signs
     this.setState({ signs });
   };
 
