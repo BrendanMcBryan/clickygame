@@ -1,7 +1,6 @@
 // import dependencies
 
 import React, { Component } from "react";
-// import logo from "./logo.svg";
 import SignCard from "./components/SignCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
@@ -46,7 +45,6 @@ class App extends Component {
         // * User has lost, reset the score and let them know about it
         this.setState({ score: 0, message: "Bad Pick!, game over" });
 
-        // TODO console.log("Already Picked!");
 
         // * Here we reset all the cards so that the "picked" in thier records are set back to "False"
         signs.forEach(element => {
@@ -71,11 +69,11 @@ class App extends Component {
         break;
     }
 
-    // TODO console.log("signs suppsoeldy shiffled!");
     // * After all the above set the state of signs
     this.setState({ signs });
   };
 
+// * Render the home page
   render() {
     return (
       <Wrapper>
