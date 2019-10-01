@@ -3,16 +3,23 @@ import "./style.css";
 
 function Title(props) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">
-        React Remember
-      </a>
-      <h4 className="message">{props.message}
-      </h4>
-      <div className="my-2 my-lg-0">
-        Score: {props.score} | Top Score: {props.topScore}
-      </div>
-    </nav>
+    <div className="titleNav">
+      <nav className="navbar sticky-top navbar-expand-lg ">
+        <div className="row d-flex flex-row justify-content-between">
+          <div className="col-3">
+            {/* <a className="navbar-brand" href="/"> */}
+              React Remember
+            {/* </a> */}
+          </div>
+          <div className="col-3 message">
+            {props.message}
+          </div>
+          <div className="col-3 score">
+            Score: {props.score} | Top Score: {props.topScore}
+          </div>
+        </div>
+      </nav>
+    </div>
   );
 }
 
