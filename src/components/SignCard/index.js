@@ -11,7 +11,7 @@ function SignCard(props) {
       <div className="card-image-overlay">
         <h6 className="card-title">{props.sign}</h6>
         <p className="card-text">{props.picked.toString()}</p>
-        <p>id->{props.id}</p>
+        <p>{props.id}</p>
       </div>
     </div>
   );
