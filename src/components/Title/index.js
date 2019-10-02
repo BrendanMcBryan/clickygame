@@ -6,16 +6,18 @@ function Title(props) {
     <div className="titleNav">
       <nav className="navbar sticky-top navbar-expand-lg ">
         <div className="row d-flex flex-row justify-content-between">
-          <div className="col-3">
+          <div className="col-5 brand-col">
             {/* <a className="navbar-brand" href="/"> */}
-              React Remember
+            <h1>React Remember</h1>
             {/* </a> */}
           </div>
-          <div className="col-3 message">
-            {props.message}
+          <div className="col-4 message-col">
+            <h2>{props.message}</h2>
           </div>
-          <div className="col-3 score">
-            Score: {props.score} | Top Score: {props.topScore}
+          <div className="col-3 score-col">
+            <h3>
+              Score<span className="scorespan"> {props.score}</span> |{" "}
+              <span className="scorespan">{props.topScore}</span> High </h3>
           </div>
         </div>
       </nav>

@@ -1,5 +1,17 @@
 .card {
   background: rgba(247, 243, 243, 0.378);
-  box-shadow: 0 4px 8px 0 rgba(26, 27, 27, 0.432),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 3px 0 rgba(46, 11, 6, 1),
+    0 8px 12px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+}
+
+.card:hover {
+  background: rgba(82, 27, 27, 0.631);
+  box-shadow: none;
+  cursor: grab;
+}
+.card:active {
+  background: rgba(82, 27, 27, 0.631);
+  box-shadow: none;
+  cursor: grabbing;
 }
