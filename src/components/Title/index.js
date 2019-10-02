@@ -17,7 +17,8 @@ function Title(props) {
           <div className="col-3 score-col">
             <h3>
               Score<span className="scorespan"> {props.score}</span> |{" "}
-              <span className="scorespan">{props.topScore}</span> High </h3>
+              <span className="scorespan">{props.topScore}</span> High{" "}
+            </h3>
           </div>
         </div>
       </nav>
