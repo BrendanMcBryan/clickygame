@@ -6,7 +6,7 @@
     "longitude_start": "0",
     "longitude_end": "30",
     "wiki_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Aries.svg",
-    "svg": "/assets/images/svg/Aries.svg",
+    "svg": "../assets/images/svg/Aries.svg",
     "unicode_symbol": "♈",
     "gloss": "The Ram",
     "element": "Fire",
