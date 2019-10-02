@@ -15,11 +15,7 @@ class App extends Component {
     message: "Welcome! Click to start!"
   };
 
-  // TODO check to see if i really need to use this Headers, seems like maybe not
-  componentDidMount() {
-    // this.shuffleSigns(this.state.signs);
-  }
-
+ 
   // * This method, which took a lot of searching and finagling, is apparently called the "Durstenfeld shuffle algorithm" for shuffling an array, it was confirmed as 'how to do it' by Dan before class
 
   shuffleSigns = array => {
